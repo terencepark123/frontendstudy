@@ -1,0 +1,107 @@
+<!DOCTYPE html><!-- 이 문서는 html5로 작성된 문서이다라고 알려줌 , 없으면 html로 인식이 안됨-->
+<html lang="en">
+<head><!-- metadata -> 데이터의 구조에 대한 데이터, 검색에 아주 중요함, 최적화도 중요함-->
+    <meta charset="UTF-8"> <!-- HTML 문서의 문자 인코딩 방식을 명시 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 렌더링-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 화면 상의 화상 표시 영역, 반응형 웹페이지 도와주는 viewport-->
+    <meta name="description" content="width=device-width, initial-scale=1.0"> 
+    <meta name="keywords" content=""> 
+    <meta name="author" content="terry"> 
+    <title>1주차 숙제</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    Document 키워드 잘 선정, 페이지마다 이름도 다 다르게 잘...
+    <h2 id="first">- 링크 Anchor </h2>
+    <a href="https://www.naver.com">네이버</a><br><br>
+    <a href="https://www.naver.com"><img src ="https://www.humanesociety.org/sites/default/files/styles/768x326/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ISdG3bxz"/></a><br><br>
+    <a href="images/cat.jpg">고양이</a><br><br> <!-- 로컬 주소 링크-->
+    <a href="#first">제목으로 이동</a> (페이지 내 이동)<br><br>
+    <a href="#">빈 링크</a> (나무위키에서 자료없을 때)<br><br>
+
+<!-- https://www.naver.com vs www.naver.com? -->
+
+    <h2>- HTML - Image </h2>
+    <img src="https://www.humanesociety.org/sites/default/files/styles/768x326/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ISdG3bxz" alt="고양이 어디갔죠?">
+    <img src="https://www.humanesociety.org/sites/default/files/styles/768x326/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ISdG3bxz" width="200">
+    <img src="https://www.humanesociety.org/sites/default/files/styles/768x326/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ISdG3bxz" height="200">
+    <img src="https://www.humanesociety.org/sites/default/files/styles/768x326/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ISdG3bxz" width="200" height="200"><br><br>
+
+    <h2>- HTML - List </h2>
+    <ul>
+        <li>cat</li>
+        <li>dog</li>
+        <li>cow</li>
+    </ul>
+    <ol>
+        <li>cat</li>
+        <li>dog</li>
+        <li>cow</li>
+    </ol>
+    <dl> <!--description list-->
+        <dt>Coffee</dt><!--description term-->
+        <dd>- black hot drink</dd><!--description describe-->
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+
+    <h2>- HTML - Table </h2>
+    <table style="width:100%">
+        <caption> cute animals</caption>
+        <tr>
+            <th>Species</th>
+            <th>age</th>
+            <th>cuteness</th>
+        </tr>    
+        <tr>
+            <td>cat</td>
+            <td>1</td>
+            <td>high</td>
+        </tr>    
+        <tr>
+            <td>dog</td>
+            <td rowspan="2">11</td> <!-- 로우 2칸 차지-->
+            <td colspan="2">middle</td> <!-- 컬럼 2칸 차지-->
+        </tr></table>
+
+    <br><br>
+
+    <h2>- Form - 기존구조 </h2>
+    <form action = '#' accept-charset='utf-8' name = 'person_info' method="GET">
+        <fieldset style = "width:150">
+        <legend>개인 정보 입력</legend>
+            이름 : <input type="text" name= "user_name"/><br><br>
+            나이 : <input type="text" name= "user_age"/><br><br>
+        </fieldset><br>
+        <fieldset style ='width:180; height:180'>
+        <legend> 여가 활동</legend>
+            취미 : <input type="text" name="user_hobby"/><br><br>
+            특기 : <input type="text" name="user_specialty"/><br><br>
+        </fieldset>
+    </form>
+
+    <br><br>
+
+    <h2>- Form - input </h2>
+        <form action = "#" accept-charset="utf-8" name="person_info" method = "get">
+            <fieldset style="width:150">
+            <legend>회원가입</legend>
+                이름: <input type="text"name ="name" required/>
+                주민번호: <input type="text" name ="security_number" pattern="d\{6}\-\d{7}" title="123456-1234567 형식으로 입력해주세요"/><br><br>
+                아이디: <input type="text" name = "user_id"/><br><br>
+                비밀번호 : <input type ="password" name = "user_password"/>
+                이메일 : <input type ="email" name = "user_email"/><br><br>
+                전화번호 : <input type ="text" name = "user_phone_number"/><br><br>
+                만 나이 : <input type ="number" name = "user_age"/><br><br>
+                file : <input type ="file" name = "user_file"/><br><br>
+                <input type = "submit" value = "가입하기"/><br><br>
+            </fieldset>
+        </form>
+        
+    
+</body>
+</html>
+
+

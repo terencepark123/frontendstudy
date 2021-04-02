@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>table</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+       <!-- 
+압축파일 안에 넣어둔 이미지를 html 코드를 이용해서 최대한 흡사하게 마크업 해주시길 바랍니다
+
+*css 제공합니다
+
+*code 내 꼭 포함 시킬 것
+    1. thead, tbody를 사용할 것
+    2. 특수문자는 코드표를 사용할 것
+
+* 과제 힌트
+    1. scope=col 사실 보여주는 부분에서는 해당 속성이 결정하지 않으나, 웹 표준 및 웹 접근성에 필수 사항임.(ex. 시각장애인)
+    2. row
+    3. rowspan -->
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th scope="col">월</th>
+            <th scope="col">화</th>
+            <th scope="col">수</th>
+            <th scope="col">목</th>
+            <th scope="col">금</th>
+        </tr>
+        </thead>
+        <tbody><tr>
+            <th scope="row">1교시</th>
+            <td rowspan="2">HTML &amp; CSS 시작</td>
+            <td>게임하기</td>
+            <td rowspan="2">HTML &amp; CSS 시작</td>
+            <td>게임하기</td>
+            <td rowspan="2">HTML &amp; CSS 시작</td>
+        </tr>
+        <tr>
+            <th scope="row">2교시</th>
+            <td rowspan="2">Javascript 공부</td>
+            <td rowspan="2">Javascript 공부</td>
+        </tr>
+        <tr>
+            <th scope="row">3교시</th>
+            <td>Javascript 시작반</td>
+            <td>Javascript 시작반</td>
+            <td>Javascript 시작반</td>
+        </tr>
+        <tr>
+            <th colspan="6">점심시간</th>
+        </tr>
+        <tr>
+            <th scope="row">4교시</th>
+            <td>server 기초반</td>
+            <td rowspan="2">게임하기</td>
+            <td rowspan="2">유튜브 보기</td>
+            <td rowspan="2">TML &amp; CSS 포트폴리오반</td>
+            <td>server 기초반</td>
+        </tr>
+        <tr>
+            <th scope="row">5교시</th>
+            <td rowspan="1">게임하기</td>
+            <td rowspan="1">게임하기</td>
+        </tr>
+        </tbody>
+    </table>
+    </body>
+</html>

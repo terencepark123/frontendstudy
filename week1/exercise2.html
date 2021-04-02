@@ -1,0 +1,90 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Input</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <br><br><br><br><br><br><br><br><br><br>
+  <form action="#" method="GET">
+    name은 namespace를 정의? 같을 경우<br>
+
+    <input type="radio" id="subscribed" name="subscription">
+    <label for="subscribed">구독 중</label>
+    
+    <input type="radio" id="unsubscribed" name="subscription">
+    <label for="unsubscribed">미구독 중</label><br><br>
+    <input type="submit" method="GET">
+  </form> <br><br>
+
+  <form action="#" method="GET">
+    <input type="text" placeholder="이름을 입력해주세요" maxlength="10" minlength="5" value="이름을 입력해주세요" required> 
+    <input type="password" placeholder="이름을 입력해주세요" maxlength="10" minlength="5" disabled> 
+    <input type="email" placeholder ="이메일을 입력해주세요"> 
+
+    <input type="submit">
+  </form>  
+  <br><br>
+  <form action="#" method="GET">     
+    accept -> 보안의 default, image/*은 이미지에 대한 거 다 가능
+    <input type="file" accept=".png">
+    <input type="file" accept="image/*">
+    <input type="email" placeholder ="이메일을 입력해주세요"> 
+    <input type="number" placeholder ="전화번호를 입력해주세요" min="10"> 
+    <input type="url" placeholder ="url을 입력해주세요"> 
+    <input type="password" placeholder ="패스워드를 입력해주세요"> 
+
+    <input type="submit">
+  </form>
+가장 기본적인 코드<br>
+placeholder vs value / value는 복사가 가능하다<br>
+min은 숫자가 크거나 작은거, minlength는 문자 길이가 길거나 짧은거
+질문 Get vs post
+
+부트스트랩 <br>
+framework <br>
+
+btn 약간만 하면 이쁘게 완성 <br>
+우리가 맞춰야함 
+클래스 명도 마음대로 지정 불가능.
+
+library 
+btn 에 대한 라이브러리만 갖고옴.
+선택적으로 사용
+관점의 차이?
+
+<form action="#" method="GET">
+  name은 namespace를 정의? 같을 경우<br>
+
+  <input type="checkbox" id="html" name="skills">
+  <label for="html">HTML</label>
+  
+  <input type="checkbox" id="css" name="skills">
+  <label for="css">CSS</label><br><br>
+  <input type="submit" method="GET">
+
+<br><br>select는 name을 라디오와 달리 한개만 선택하면 됨 <br>
+  <select name="skill" multiple id=""> 
+    <option value="">1a</option>
+    <option value="">2b</option>
+    <option value="">3c</option>
+    <option value="">4d</option>
+    <option value="">5e</option>
+  </select>
+</form> 
+  <label for="filed">자기소개서</label>
+  <textarea id="filed" maxlength="10"></textarea>
+
+  button submit reset
+
+
+  <form action="#" method="GET">
+
+  </form> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>aasd
+</body>
+</html>

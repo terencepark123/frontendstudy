@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="GET">
+        <input type="text" name="name">
+        <input type="text" name="password">
+        <input type="text" name="ID">
+        <input type="submit">
+    </form><br><br>
+    <form action="" method="POST">
+        <input type="text" name="name">
+        <input type="text" name="password">
+        <input type="text" name="ID">
+        <input type="submit">
+    </form>
+    action -API주소<br>
+    method - GET / POST 겟은 보안성이 취약해서 잘 사용 안함
+
+    <br><br>
+<tr></tr>
+줄을 하나 만들 것이다 라는 뜻<br>
+<th></th>
+셀을 하나 만들껀데 헤더에 관련한 것<br>
+<td></td>
+구조에 맞게 td수를 맞춰야함<br>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>role</th>
+    </tr>
+    </thead>
+    <tbody><tr>
+        <td>test</td>
+        <td>박중창</td>
+        <td>프론트?</td>
+    </tr>
+    <tr>
+        <td>test2</td>
+        <td>박중창2</td>
+        <td>프론트2</td>
+        <td></td> 
+    </tr>
+    </tbody>
+</table>
+
+<br>
+미디어파일은 어떤 형태이든 무언가를 삽입하는 것을 뜻함<br>
+<audio src="./kitten-510651.jpg" controls></audio>
+<audio src="./kitten-510651.jpg" autoplay>이건 막힘, 다른 방법 있음</audio>
+<audio><source src="./media.mp3" type="audio/mpeg"></audio>
+<audio><source src="./media.mp3" type="audio/wav"></audio>
+<audio><source src="./media.mp3" type="audio/ogg"></audio> <br> 
+재생을 어떻게든 시켜주려고 type 별로 다 틀어줌 <br>
+<video src="" controls>오디오랑 똑같다</video>
+<iframe>굉장히 깨져서 잘 안쓴다</iframe><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9c9_p9ZSP04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video autoplay>자동실행한다.</video>
+
+
+
+
+<br><br>
+<a href="http://www.google.com" target="_blank">링크</a>
+<a href="mailto:valley84265@naver.com" target="_blank">메일</a>
+<a href="tel:01012341234">전화번호</a>
+<!--href 태그의 추가적인 정보를 주는 속성
+href - hypertext reference
+reference - 주소값-->
+<br>
+<img src="#" alt=""/>
+<img src="./kitten-510651.jpg" alt="밍밍쓰"/><br>
+src - source/ img에 값을 전달해줌<br>
+alt - alternative text/ 제대로 사진이 안나올 때 이미지에 대한 최소 정보  <br>
+시각장애인에게 필요한 태그.최소한의 정보를 제공하는게 의무! <br>
+웬만하면 상대 경로 쓰지마... <br><br>
+
+
+ol 실시간 검색어
+순서가 중요한 것- <ol></ol>
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+ul
+순서가 중요하지 않은 것- <ul></ul>
+<ul>
+    <li>고양이</li>
+    <li>알파카</li>
+    <li>사슴</li>
+    <li>개</li>
+    <li>돼지</li>
+    <li>사람</li>
+</ul>
+<br>
+li만 써야 함. div 등 다른 건 사용하지 말기를 권장(웹 표준 법 관련)
+<br>
+꿀팁 --> ul>li*6 자동 리스트 생성
+<br>
+정의 리스트
+key-value
+이름 : 김민준
+직업: 인프라운영
+00은 00이다 라는 정보를 제공한다
+<br>
+dl: description List
+정의 리스트 만들 때 선언하는 것
+<br>
+dt:
+이름: 김민준에서 이름에 해당되는 곳에 사용됨 
+key 값에 해당
+<br>
+dd:
+key값에 대한 용어를 설명하는 태그
+<br>
+dt한번 써지면 dd가 내용으로 따라와야함. 사용하지 않아도 넣어줌태그 앞에 항상
+<dl>
+    <div>    
+        <dt>
+            <dfn>사과</dfn>
+        </dt>
+        <dd>
+            <a href="#"><span> 사과에 대한 설명</span></a>
+        </dd>
+        <dt>바나나</dt>
+        <dd></dd><!--dt 나오면 무조건 써야함-->
+    </div>
+</dl>
+
+
+
+<div></div>
+<span>text</span>
+<p></p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+

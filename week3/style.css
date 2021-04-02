@@ -1,0 +1,37 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.03em;
+}
+
+html {
+  font-family: "SpoqaHanSans";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2d3d;
+}
+
+img{
+  width:500px;
+  height:500px;
+}
+#ex2:hover{
+  width:100px;
+  background: url('https://image.fmkorea.com/files/attach/new/20200715/2978469841/2981528405/2990793061/d979cf765fa86a0bb7ef8cab17e44eb3.jpeg')
+}
+
+#ex3 {
+  background: url('./cat.png');
+  width:500px;
+  height:500px;
+}
+#ex3:hover {
+  background: url('https://image.fmkorea.com/files/attach/new/20200715/2978469841/2981528405/2990793061/d979cf765fa86a0bb7ef8cab17e44eb3.jpeg');
+  width:500px;
+  height:500px;
+}
+.imgswap img:last-child{display:none} 
+.imgswap:hover img:first-child{display:none} 
+.imgswap:hover img:last-child{display:inline-block}
